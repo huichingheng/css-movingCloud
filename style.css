@@ -1,0 +1,308 @@
+/*----- General Settings ------*/
+* {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*----- Background Settings ------*/
+.background {
+  width: 100%;
+  height: 100%;
+  min-height: 790px;
+  background: linear-gradient(rgb(70, 44, 95), #7C579E);
+}
+
+/*----- YOUR CODE HERE ------*/
+.moon {
+  width: 250px;
+  height: 250px;
+  background: #f8d55e;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+  border: 7px solid #f6df99;
+  box-shadow: inset -25px -25px rgba(0,0,0,.1);
+}
+
+.moon:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 245px;
+  height: 245px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px 30px rgba(255,255,255,.1), 
+  0 0 15px 15px rgba(255,255,255,.3),
+  0 0 10px 10px rgba(255,255,255,.5)
+}
+
+.circle1 {
+  width: 25px;
+  height: 25px;
+  background: #e7c450;
+  border-radius: 50%;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  box-shadow: inset -1px 3px rgba(0,0,0,.1);
+}
+
+.circle2 {
+  width: 30px;
+  height: 30px;
+  background: #e7c450;
+  border-radius: 50%;
+  position: absolute;
+  top: 12%;
+  left: 30%;
+  box-shadow: inset -1px 4px rgba(0,0,0,.1);
+}
+
+.circle3 {
+  width: 15px;
+  height: 15px;
+  background: #e7c450;
+  border-radius: 50%;
+  position: absolute;
+  top: 30%;
+  left: 32%;
+  box-shadow: inset -1px 2px rgba(0,0,0,.1);
+}
+
+.circle4 {
+  width: 15px;
+  height: 15px;
+  background: #e7c450;
+  border-radius: 50%;
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  box-shadow: inset -1px 2px rgba(0,0,0,.1);
+}
+
+.circle5 {
+  width: 10px;
+  height: 10px;
+  background: #e7c450;
+  border-radius: 50%;
+  position: absolute;
+  top: 78%;
+  left: 40%;
+  box-shadow: inset -1px 2px rgba(0,0,0,.1);
+}
+
+.circle6 {
+  width: 5px;
+  height: 5px;
+  background: #e7c450;
+  border-radius: 50%;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  box-shadow: inset -1px 2px rgba(0,0,0,.1);
+}
+
+.circle7 {
+  width: 10px;
+  height: 10px;
+  background: #e7c450;
+  border-radius: 50%;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  box-shadow: inset -1px 2px rgba(0,0,0,.1);
+}
+
+.star-1 {
+  width: 10px;
+  height: 10px;
+  top: 15%;
+  left: 40%;
+  position: absolute;
+  border-radius: 50%;
+  background: #f6ed99;
+
+  animation: blink 2s ease-in infinite
+}
+
+.star-2 {
+  width: 15px;
+  height: 15px;
+  top: 7%;
+  left: 10%;
+  position: absolute;
+  border-radius: 50%;
+  background: #f6ed99;
+
+  animation: blink 2s ease-in infinite
+}
+
+.star-3 {
+  width: 7px;
+  height: 7px;
+  top: 30%;
+  left: 28%;
+  position: absolute;
+  border-radius: 50%;
+  background: #f6ed99;
+  
+  animation: blink 2s ease-in infinite
+}
+
+.star-4 {
+  width: 10px;
+  height: 10px;
+  top: 40%;
+  right: 5%;
+  position: absolute;
+  border-radius: 50%;
+  background: #f6ed99;
+  
+  animation: blink 2s ease-in infinite
+}
+
+.star-5 {
+  width: 15px;
+  height: 15px;
+  top: 5%;
+  right: 3%;
+  position: absolute;
+  border-radius: 50%;
+  background: #f6ed99;
+  
+  animation: blink 2s ease-in infinite
+}
+
+.star-6 {
+  width: 5px;
+  height: 5px;
+  top: 40%;
+  left: 5%;
+  position: absolute;
+  border-radius: 50%;
+  background: #f6ed99;
+
+  animation: blink 2s ease-in infinite
+}
+
+.cloud-container {
+  position: absolute;
+  width: 100%;
+}
+
+.cloud-1 {
+  top: 17%;
+  left: 30%;
+  animation: move 15s linear infinite reverse;
+}
+
+.cloud-2 {
+  top: 45%;
+  left: 80%;
+  animation: move 15s linear infinite alternate;
+}
+
+/* cloud shape */
+.cloud {
+  position: absolute;
+  top: 10px;
+  left:10px;
+  width:100px;
+  height:100px;
+  background:#383983;
+  border-radius: 50%; 
+}
+
+.cloud:before, .cloud:after {
+  content: '';
+  position: absolute;
+  background:#383983;
+}
+
+.cloud:before {
+  width: 50%;
+  height: 50%;
+  right: 80px;
+  top: 30px;
+  border-radius: 50%;
+}
+
+.cloud:after {
+  width: 230px;
+  height: 80px;
+  left: -62px;
+  top: 50px;
+  border-radius: 100px;
+}
+
+.cloud-border {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background:#5052b1;
+  border-radius: 50%; 
+}
+
+.cloud-border:before, .cloud-border:after {
+  content: '';
+  position: absolute;
+  background:#5052b1;
+}
+
+.cloud-border:before {
+  width: 70px;
+  height: 70px;
+  right: 80px;
+  top: 30px;
+  border-radius: 50%;
+}
+
+.cloud-border:after {
+  width: 250px;
+  height: 100px;
+  left: -62px;
+  top: 50px;
+  border-radius: 100px;
+}
+
+.text {
+  font-family: 'Passion One', cursive;
+  font-size: 3rem;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px #b34f9c;  
+}
+
+/* Animation */
+@keyframes blink {
+  0% {
+    box-shadow:0 0 6px 6px rgba(255,255,255,.5)
+  }
+  100%{
+    box-shadow: 0;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(100%)
+  }
+  100%{
+    transform: translateX(-100%)
+  }
+}
