@@ -44,12 +44,16 @@
   0 0 10px 10px rgba(255,255,255,.5)
 }
 
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6, .circle7 {
+  border-radius: 50%;
+  position: absolute;
+  background: #e7c450;
+  box-shadow: inset -1px 2px rgba(0,0,0,.1);
+}
+
 .circle1 {
   width: 25px;
   height: 25px;
-  background: #e7c450;
-  border-radius: 50%;
-  position: absolute;
   top: 25%;
   left: 15%;
   box-shadow: inset -1px 3px rgba(0,0,0,.1);
@@ -58,9 +62,6 @@
 .circle2 {
   width: 30px;
   height: 30px;
-  background: #e7c450;
-  border-radius: 50%;
-  position: absolute;
   top: 12%;
   left: 30%;
   box-shadow: inset -1px 4px rgba(0,0,0,.1);
@@ -69,56 +70,44 @@
 .circle3 {
   width: 15px;
   height: 15px;
-  background: #e7c450;
-  border-radius: 50%;
-  position: absolute;
   top: 30%;
   left: 32%;
-  box-shadow: inset -1px 2px rgba(0,0,0,.1);
 }
 
 .circle4 {
   width: 15px;
   height: 15px;
-  background: #e7c450;
-  border-radius: 50%;
-  position: absolute;
   top: 70%;
   left: 15%;
-  box-shadow: inset -1px 2px rgba(0,0,0,.1);
 }
 
 .circle5 {
   width: 10px;
   height: 10px;
-  background: #e7c450;
-  border-radius: 50%;
-  position: absolute;
   top: 78%;
   left: 40%;
-  box-shadow: inset -1px 2px rgba(0,0,0,.1);
 }
 
 .circle6 {
   width: 5px;
   height: 5px;
-  background: #e7c450;
-  border-radius: 50%;
-  position: absolute;
   top: 75%;
   left: 50%;
-  box-shadow: inset -1px 2px rgba(0,0,0,.1);
 }
 
 .circle7 {
   width: 10px;
   height: 10px;
-  background: #e7c450;
-  border-radius: 50%;
-  position: absolute;
   top: 15%;
   left: 50%;
-  box-shadow: inset -1px 2px rgba(0,0,0,.1);
+}
+
+.star-1, .star-2, .star-3, .star-4, .star-5, .star-6 {
+  position: absolute;
+  border-radius: 50%;
+  background: #f6ed99;
+
+  animation: blink 2s ease-in infinite
 }
 
 .star-1 {
@@ -126,11 +115,6 @@
   height: 10px;
   top: 15%;
   left: 40%;
-  position: absolute;
-  border-radius: 50%;
-  background: #f6ed99;
-
-  animation: blink 2s ease-in infinite
 }
 
 .star-2 {
@@ -138,11 +122,6 @@
   height: 15px;
   top: 7%;
   left: 10%;
-  position: absolute;
-  border-radius: 50%;
-  background: #f6ed99;
-
-  animation: blink 2s ease-in infinite
 }
 
 .star-3 {
@@ -150,11 +129,6 @@
   height: 7px;
   top: 30%;
   left: 28%;
-  position: absolute;
-  border-radius: 50%;
-  background: #f6ed99;
-  
-  animation: blink 2s ease-in infinite
 }
 
 .star-4 {
@@ -162,11 +136,6 @@
   height: 10px;
   top: 40%;
   right: 5%;
-  position: absolute;
-  border-radius: 50%;
-  background: #f6ed99;
-  
-  animation: blink 2s ease-in infinite
 }
 
 .star-5 {
@@ -174,11 +143,6 @@
   height: 15px;
   top: 5%;
   right: 3%;
-  position: absolute;
-  border-radius: 50%;
-  background: #f6ed99;
-  
-  animation: blink 2s ease-in infinite
 }
 
 .star-6 {
@@ -186,11 +150,6 @@
   height: 5px;
   top: 40%;
   left: 5%;
-  position: absolute;
-  border-radius: 50%;
-  background: #f6ed99;
-
-  animation: blink 2s ease-in infinite
 }
 
 .cloud-container {
